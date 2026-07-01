@@ -35,8 +35,6 @@ O produto de referência deste estudo é a **Friendship Lamp da Filimin**, empre
   <p style="text-align: center"><b>Figura 1:</b> Lâmpada de amizade (inserir foto real em <code>assets/</code>). Fonte: friendshiplamps.com</p>
 </div>
 
-> ⚠️ **Inserir a foto real do produto** em `LampadaDeAmizade/assets/friendship_lamp.jpg` antes da entrega (a documentação exige foto). Fonte sugerida: página do fabricante.
-
 ### 2.2 Principais módulos do sistema
 
 | Módulo | Papel no sistema | Implementação típica |
