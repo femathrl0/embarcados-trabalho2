@@ -1,7 +1,6 @@
 # Trabalho 2 (2026-1)
 
 > Fundamentos de Sistemas Embarcados — UnB/FGA <br>
-> Professor: *(preencher)*
 
 ## 1. Objetivos
 
@@ -11,10 +10,10 @@ Este trabalho apresenta um estudo teórico-exploratório sobre um produto embarc
 
 | Nome | Matrícula |
 |------|-----------|
-| *(preencher)* | *(preencher)* |
-| *(preencher)* | *(preencher)* |
-| *(preencher)* | *(preencher)* |
-| *(preencher)* | *(preencher)* |
+| *Felipe Matheus Ribeiro Lopes* | *221031274* |
+| *Rafael Souto Lopes Laube* | *211062428* |
+| *Pedro Fonseca Cruz* | *212005444* |
+| *Paulo Henrique Melo de Souza* | *221022417* |
 
 ---
 
@@ -32,7 +31,7 @@ O produto de referência deste estudo é a **Friendship Lamp da Filimin**, empre
 - **Contexto de uso:** doméstico, como objeto decorativo de mesa/cabeceira que se integra ao ambiente sem ser intrusivo (ao contrário das notificações de um celular).
 
 <div align="center">
-  <img src="assets/friendship_lamp.jpg" width="360">
+  <img src="assets/friendship_lamp.png" width="360">
   <p style="text-align: center"><b>Figura 1:</b> Lâmpada de amizade (inserir foto real em <code>assets/</code>). Fonte: friendshiplamps.com</p>
 </div>
 
@@ -149,7 +148,6 @@ O diagrama a seguir separa entradas, controle (ESP32), atuador, conectividade e 
 
 ## 5. Pesquisa bibliográfica e tecnológica
 
-> ⚠️ Metadados marcados com ⚠ (autoria/veículo/ano) devem ser **confirmados na página do artigo** antes da entrega, assim como o acesso ao PDF pelo **Periódicos CAPES / IEEE Xplore** (links do arXiv, MDPI e PMC são de acesso aberto; ResearchGate e ACM podem exigir login institucional). Não faça *upload* dos PDFs ao repositório — apenas os links.
 
 ### 5.1 Tecnologia
 
@@ -161,21 +159,21 @@ O diagrama a seguir separa entradas, controle (ESP32), atuador, conectividade e 
 **Aplicação em sistemas embarcados:** É o fundamento do mecanismo que sincroniza as lâmpadas (tocar → publicar → *broker* → assinantes acendem). Justifica tecnicamente a escolha do MQTT no sistema proposto com ESP32.
 
 #### **5.1.2 Lightweight Embedded IoT Gateway for Smart Homes Based on an ESP32 Microcontroller**
-**Autores:** ⚠ confirmar na página do artigo.
+**Autores:** Filippas Serepas, Ioannis Papias, Konstantinos Christakis, Nikos Dimitropoulos
 **Publicado em:** 2025, *Computers* (MDPI), v. 14, n. 9, artigo 391.
 **Link:** [PDF (acesso aberto)](https://www.mdpi.com/2073-431X/14/9/391)
 **Resumo:** Projeta e implementa um *gateway* IoT doméstico sobre ESP32 usando MQTT e REST, justificando tecnicamente o SoC (Wi-Fi/BLE integrados, consumo abaixo de 1 W, baixo custo) frente a alternativas como *single-board computers*.
 **Aplicação em sistemas embarcados:** Embasa o núcleo embarcado da reprodução proposta (ESP32 + MQTT), mostrando padrões de arquitetura, controle local e economia de energia aplicáveis à lâmpada.
 
 #### **5.1.3 TinyML: Analysis of Xtensa LX6 Microprocessor for Neural Network Applications by ESP32 SoC**
-**Autores:** ⚠ confirmar na página do artigo.
+**Autores:** Md Ziaul Haque Zim
 **Publicado em:** 2021, arXiv:2106.10652.
 **Link:** [PDF (acesso aberto)](https://arxiv.org/pdf/2106.10652)
 **Resumo:** Analisa a arquitetura e a capacidade do processador **Xtensa LX6** que equipa o ESP32, avaliando desempenho e limites de execução local.
 **Aplicação em sistemas embarcados:** Fornece a base para a seção de *arquitetura de processador*, permitindo dimensionar o que o MCU consegue executar localmente (lógica de cor, gestão de conexão, provisionamento).
 
 #### **5.1.4 Experimental Characterization of RGB LED Transceiver in Low-Complexity LED-to-LED Link**
-**Autores:** ⚠ confirmar na página do artigo.
+**Autores:** Mariam Galal, Wai Pang Ng, Richard James Binns, Ahmed Abd El Aziz
 **Publicado em:** 2020, *Sensors* (MDPI), via PMC.
 **Link:** [PDF (acesso aberto)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7600371/)
 **Resumo:** Caracteriza experimentalmente LEDs RGB de baixo custo como elementos optoeletrônicos, medindo comportamento espectral e de resposta.
@@ -191,22 +189,23 @@ O diagrama a seguir separa entradas, controle (ESP32), atuador, conectividade e 
 **Aplicação em sistemas embarcados:** Dá o enquadramento teórico do "porquê" do produto — presença e afeto à distância — e situa a lâmpada dentro da família de dispositivos de comunicação ambiente.
 
 #### **5.2.2 Connected Candles: Aesthetic Nostalgia Mediated Design for Long Distance Relationship**
-**Autores:** ⚠ confirmar na página do artigo.
-**Publicado em:** 2021 ⚠ (confirmar veículo).
+**Autores:** 
+Jonna Häkkilä, Hong Li, Saara Koskinen, Ashley Colley
+**Publicado em:** 2021.
 **Link:** [ResearchGate](https://www.researchgate.net/publication/358765553)
 **Resumo:** Apresenta um par de "velas" conectadas pela internet — acender a vela real em um local ilumina a eletrônica no outro — avaliadas como *display* periférico para mediar afeto entre casais à distância.
 **Aplicação em sistemas embarcados:** É um **análogo quase direto** da lâmpada de amizade (par de objetos de luz conectados por rede), sendo a melhor evidência de uso do conceito.
 
 #### **5.2.3 Light Bridge: Improving Social Connectedness Through Ambient Spatial Interaction**
-**Autores:** ⚠ confirmar na página do artigo.
+**Autores:** Jan Hommes, Michael Kipp
 **Publicado em:** 2024, ACM (Digital Library).
 **Link:** [ACM](https://dl.acm.org/doi/fullHtml/10.1145/3643834.3660689)
 **Resumo:** Propõe uma interação ambiente que transmite co-presença por mudanças na iluminação; um estudo com 20 participantes indica que a luz comunica proximidade sem ser intrusiva nem violar a privacidade.
 **Aplicação em sistemas embarcados:** Evidência empírica do efeito buscado pelo produto (conexão social por luz ambiente), útil para a discussão de usabilidade e valor da reprodução.
 
 #### **5.2.4 Evaluating Human Activity-Based Ambient Lighting Displays for Effective Peripheral Communication**
-**Autores:** ⚠ confirmar na página do artigo.
-**Publicado em:** 2018 ⚠ (confirmar veículo).
+**Autores:** Kadian Davis-Owusu, Evans Owusu, Lucio Marcenaro, Loe Feijs
+**Publicado em:** 2018.
 **Link:** [ResearchGate](https://www.researchgate.net/publication/316754972)
 **Resumo:** Desenvolve e avalia uma plataforma de *display* de iluminação ambiente bidirecional (incluindo lâmpada Philips Hue) para *awareness* e conexão social em tempo real, com ganhos medidos em presença social.
 **Aplicação em sistemas embarcados:** Mostra, com métricas, que iluminação ambiente conectada aumenta a sensação de presença — sustentando a proposta de valor da lâmpada.
@@ -226,8 +225,6 @@ A tabela reúne produtos da mesma categoria (lâmpadas/objetos de presença à d
 | ZOCI VOCI Telepathy | ZOCI VOCI | Wi-Fi | Toque | LED RGB | App · sem assinatura | Atual | ≈ US$ 55/par |
 | Tikkitouch | Tikkitouch | Wi-Fi + Bluetooth (setup) | Toque | LED RGB | App · sem assinatura | Atual | ≈ US$ 50/par |
 | Lâmpada DIY (referência) | Open-source (ESP8266/ESP32) | Wi-Fi + MQTT | Botão/toque | WS2812B (NeoPixel) | Sem app · sem assinatura | Maker | ≈ US$ 5–15/un. |
-
-\* Preços meramente indicativos — **confirmar nas páginas dos fabricantes na data da entrega.**
 
 **Leitura do comparativo:** a categoria é tecnicamente homogênea (Wi-Fi 2,4 GHz + toque + LED RGB + nuvem). Os fatores de diferenciação são a **assinatura** (a maioria dispensa; a FriendLi exige), a **independência de servidor** (a versão *DIY* pode rodar um *broker* próprio), o **custo** (a versão aberta é uma ordem de grandeza mais barata) e o **acabamento/UX** (provisionamento e materiais dos produtos comerciais). Isso mostra que a reprodução com ESP32 é viável e de baixo custo, ficando o principal valor agregado dos produtos comerciais na experiência de uso e no suporte.
 
